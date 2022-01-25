@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
+import ExpenseDate from './ExpenseDate';
 
 class ExpenseItem extends Component {
 
-
-
-
     render() {
-        const expenseDate = new Date(2022, 1, 20);
-        const ExpenseTitle = 'car sevies'
-        const ExpensePrice = 295
+        const { title, amount, date } = this.props
+
         return (
             <div className='expense-item'>
-                <div >
-                    {expenseDate.toISOString()}
-                </div>
+                <ExpenseDate
+                    date={date}
+                />
                 <div className='expense-item__description'>
-                    <h2>{ExpenseTitle}</h2>
+                    <h2>{title}</h2>
                     <div className='expense-item__price'>
-                        {ExpensePrice}
+                        {`${amount} Rs `}
                     </div>
                 </div>
             </div>
