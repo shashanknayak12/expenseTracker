@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ExpenseDate from './ExpenseDate';
+import Card from './Card';
 
 class ExpenseItem extends Component {
 
@@ -7,7 +8,7 @@ class ExpenseItem extends Component {
         const { title, amount, date } = this.props
 
         return (
-            <div className='expense-item'>
+            <Card className='expense-item'>
                 <ExpenseDate
                     date={date}
                 />
@@ -17,7 +18,7 @@ class ExpenseItem extends Component {
                         {`${amount} Rs `}
                     </div>
                 </div>
-            </div>
+            </Card>
         );
     }
 }
