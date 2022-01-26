@@ -2,8 +2,13 @@ import './App.css';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpenseInput/NewExpense';
 import Card from './components/UI/Card';
+import { useState } from 'react';
 
 function App() {
+  // const [expenses, setExpenses] = useState([])
+  // console.log(expenses)
+
+
   const expenses = [
     {
       id: 'e1',
@@ -17,7 +22,8 @@ function App() {
 
 
   const handleAddToExpenses = (expensesData) => {
-    expenses.push(expensesData)
+
+
   }
 
   return (
