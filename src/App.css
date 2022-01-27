@@ -59,6 +59,7 @@
 	border: 1px solid #ccc;
 	width: 20rem;
 	max-width: 100%;
+	font-weight: 500;
 }
 
 .new-expense__actions {
@@ -94,6 +95,15 @@
 }
 
 /*expese list*/
+.expenses-list {
+	list-style: none;
+	padding: 0;
+}
+
+.expenses-list__fallback {
+	color: white;
+	text-align: center;
+}
 
 .card {
 	border-radius: 12px;
