@@ -12,17 +12,23 @@ function Expenses({ expenses }) {
     }
     return (
         <Card className='expenses'>
-            <ExpenseFilter selected={filteredYear} onFilteredYear={handleFilterYear} />
+            <ExpenseFilter
+                selected={filteredYear}
+                onFilteredYear={handleFilterYear}
+            />
 
 
             {expenses.map(each => {
                 return (
                     <div key={each.id}>
+
                         <ExpenseItem
                             title={each.title}
                             amount={each.amount}
                             date={each.date}
                         />
+
+
                     </div>
                 )
             })}
