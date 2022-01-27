@@ -27,7 +27,7 @@ function ExpenseForm({ onSaveExpenseData, handleshowExpenseForm }) {
 
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate),
         }
 
@@ -75,7 +75,7 @@ function ExpenseForm({ onSaveExpenseData, handleshowExpenseForm }) {
 
                     <div className='new-expense__control'>
                         <label>Date</label>
-                        <input type='date' value={enteredDate} onChange={handleDateChange} min='2019-01-01' max='2050-12-31'></input>
+                        <input type='date' value={enteredDate} onChange={handleDateChange} min='2019-01-01' max='2023-12-31'></input>
                     </div>
 
                 </div>
